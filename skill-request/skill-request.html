@@ -1,0 +1,64 @@
+<script type="text/javascript" src="/node-red-contrib-alexa-connector/skill-request/skill-request.html.js"></script>
+<script type="text/javascript" src="/node-red-contrib-alexa-connector/js/nacl.min.js"></script>
+<script type="text/javascript" src="/node-red-contrib-alexa-connector/js/nacl-util.min.js"></script>
+
+<script type="text/x-red" data-template-name="skill-request">
+    <h3>Instructions:</h3>
+    <ol>
+        <li><p>Login to your account <a href="https://nrac.io/account">https://nrac.io/account</a></p></li>
+        <li><p>Click the Link Node-RED Instance button</p></li>
+        <li><p>Enter your instance public key as shown below</p></li>
+        <li><p>Paste the Server Public Key into the field below</p></li>
+        <li><p>Click Done</p></li>
+    </ol>
+    <br />
+
+    <div class="form-row">
+        <label for="node-input-key" style="width:auto;"><i class="icon-bookmark"></i>Instance Public Key</label><br />
+        <input type="text" id="node-input-instancePublicKey" readonly>
+    </div>
+
+    <input type="hidden" id="node-input-instancePrivateKey">
+
+    <div class="form-row">
+        <label for="node-input-key" style="width:auto;"><i class="icon-bookmark"></i>Server Public Key</label><br />
+        <input type="text" id="node-input-serverPublicKey">
+    </div>
+
+    <details>
+        <summary>Advanced Settings</summary>
+        <div class="form-row">
+            <label for="node-input-connect" style="width:auto;"><i class="icon-bookmark"></i> connect</label><br />
+            <select id="node-input-connect">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label for="node-input-host" style="width:auto;"><i class="icon-bookmark"></i> host</label><br />
+            <input type="text" id="node-input-host">
+        </div>
+
+        <div class="form-row">
+            <label for="node-input-port" style="width:auto;"><i class="icon-bookmark"></i> port</label><br />
+            <input type="text" id="node-input-port">
+        </div>
+
+        <div class="form-row">
+            <label for="node-input-useTls"><i class="icon-bookmark"></i> use tls</label><br />
+            <select id="node-input-useTls">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label for="node-input-verifyTls"><i class="icon-bookmark"></i> verify tls</label><br />
+            <select id="node-input-verifyTls">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>
+        </div>
+    </details>
+</script>

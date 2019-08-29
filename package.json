@@ -1,0 +1,35 @@
+{
+  "name": "@nrac/node-red-contrib-alexa-connector",
+  "version": "0.3.0",
+  "description": "Node-RED Alexa Connector Nodes for https://nrac.io",
+  "main": "app.js",
+  "author": "https://nrac.io/",
+  "devDependencies": {
+    "@types/jquery": "^3.3.11",
+    "@types/node": "^6.0.87",
+    "@types/ws": "^6.0.1"
+  },
+  "dependencies": {
+    "amdefine": "^1.0.1",
+    "require1k": "^2.0.0",
+    "requirejs": "^2.3.6",
+    "simple-backoff": "^1.1.0",
+    "tweetnacl": "^1.0.1",
+    "tweetnacl-util": "^0.15.0",
+    "ws": "^6.1.3"
+  },
+  "keywords": [
+    "node-red"
+  ],
+  "node-red": {
+    "nodes": {
+      "init": "init.js",
+      "skill-request": "skill-request/skill-request.js",
+      "skill-response": "skill-response/skill-response.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
+}
