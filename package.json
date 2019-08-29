@@ -5,9 +5,10 @@
   "main": "app.js",
   "author": "https://nrac.io/",
   "devDependencies": {
-    "@types/jquery": "^3.3.11",
-    "@types/node": "^6.0.87",
-    "@types/ws": "^6.0.1"
+    "@types/jquery": "^3.3.31",
+    "@types/node": "^6.14.7",
+    "@types/ws": "^6.0.3",
+    "typescript": "^3.6.2"
   },
   "dependencies": {
     "amdefine": "^1.0.1",
@@ -16,20 +17,24 @@
     "simple-backoff": "^1.1.0",
     "tweetnacl": "^1.0.1",
     "tweetnacl-util": "^0.15.0",
-    "ws": "^6.1.3"
+    "ws": "^6.2.1"
   },
   "keywords": [
     "node-red"
   ],
   "node-red": {
     "nodes": {
-      "init": "init.js",
+      "init": "shared/init.js",
       "skill-request": "skill-request/skill-request.js",
       "skill-response": "skill-response/skill-response.js"
     }
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "dist/**/*"
+  ]
 }

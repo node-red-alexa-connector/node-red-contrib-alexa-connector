@@ -1,5 +1,5 @@
 import { SkillRequestNode } from "../skill-request/skill-request";
-import { SkillResponse } from "../models";
+import { SkillResponse } from "../shared/messages";
 
 interface SkillResponseProperties extends NodeRed.Runtime.NodeProperties {
     configNodeId: NodeRed.Runtime.NodeId;

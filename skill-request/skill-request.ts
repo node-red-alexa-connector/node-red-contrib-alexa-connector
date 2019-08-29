@@ -1,6 +1,6 @@
 import { LinearBackoff } from "simple-backoff";
 import { isNullOrUndefined } from "util";
-import { NodeRedMessage, NodeRedMessageType, SkillRequest, NodeRedAuthRequest, NodeRedAuthResponse, SkillResponse, NodeRedError } from "../messages";
+import { NodeRedMessage, NodeRedMessageType, SkillRequest, NodeRedAuthRequest, NodeRedAuthResponse, SkillResponse, NodeRedError } from "../shared/messages";
 import * as nacl from "tweetnacl";
 import * as naclutil from "tweetnacl-util";
 import * as WebSocket from "ws";
