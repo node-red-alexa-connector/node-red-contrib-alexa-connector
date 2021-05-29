@@ -17,7 +17,7 @@
     "simple-backoff": "^1.1.0",
     "tweetnacl": "^1.0.1",
     "tweetnacl-util": "^0.15.0",
-    "ws": "^6.2.1"
+    "ws": "^7.4.6"
   },
   "keywords": [
     "node-red"
